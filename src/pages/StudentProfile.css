@@ -1,0 +1,159 @@
+.student-profile-page {
+  min-height: calc(100vh - 70px);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.student-profile-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+}
+
+.student-profile-title {
+  margin: 0 0 30px;
+  text-align: center;
+  color: #222222;
+  font-size: 30px;
+}
+
+.profile-main {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eeeeee;
+}
+
+.profile-basic-info h2 {
+  margin: 0 0 15px;
+  font-size: 26px;
+  color: #222222;
+}
+
+.profile-basic-info p {
+  margin: 8px 0;
+  color: #555555;
+  font-size: 16px;
+}
+
+.profile-details {
+  padding-top: 25px;
+  border-top: 1px solid #eeeeee;
+}
+
+.profile-details p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #444444;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 18px;
+  background-color: #222222;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #444444;
+}
+
+
+.edit-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: white;
+  color: #222;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: #f2f2f2;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .student-profile-page {
+    padding: 30px 18px;
+  }
+
+  .student-profile-card {
+    padding: 25px;
+  }
+
+  .profile-main {
+    gap: 25px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .student-profile-page {
+    padding: 20px 15px;
+  }
+
+  .student-profile-card {
+    padding: 20px;
+  }
+
+  .student-profile-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .profile-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-basic-info h2 {
+    font-size: 22px;
+  }
+
+  .profile-basic-info p,
+  .profile-details p {
+    font-size: 14px;
+  }
+
+  .back-button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

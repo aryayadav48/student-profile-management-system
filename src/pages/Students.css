@@ -1,0 +1,92 @@
+.students-page {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.students-page h1 {
+  margin: 0 0 35px;
+  text-align: center;
+  font-size: 32px;
+  color: #222222;
+}
+
+.students-grid {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 35px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  outline: none;
+  font-size: 15px;
+}
+
+.search-container input:focus {
+  border-color: #222222;
+}
+
+.no-students {
+  text-align: center;
+  margin-top: 30px;
+  color: #666666;
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .students-page {
+    padding: 30px 25px;
+  }
+
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .students-page {
+    padding: 25px 18px;
+  }
+
+  .students-page h1 {
+    font-size: 27px;
+    margin-bottom: 25px;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 400px) {
+  .students-page {
+    padding: 20px 15px;
+  }
+
+  .students-page h1 {
+    font-size: 24px;
+  }
+}
